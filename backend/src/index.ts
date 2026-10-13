@@ -1,10 +1,8 @@
-import connection from "./db";
+import connection from "./database/db";
 
 async function testDatabase(){
     try{
-        const check = await connection.query(`
-            DROP TABLE test;
-        `);
+        const check = await connection.query(`SELECT NOW()`);
         console.log("Database connected");
         console.log(check.rows);
     }catch(error){

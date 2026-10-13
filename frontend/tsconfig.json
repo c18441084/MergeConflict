@@ -20,6 +20,10 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx",
+
+    "paths": {
+      "@/*": ["./src/*"]
+    },
   },
   "include": ["src"]
 }
